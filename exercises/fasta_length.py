@@ -1,7 +1,7 @@
-#!env python
+#!python
 
 """
-Python script to count the number of aminoacids per sequence in a FASTA file
+Python script to count the number of aminoacids or nucleotides per sequence in a FASTA file
 Call it like so:
     python fasta_length.py sequences.fasta
 """
@@ -15,7 +15,7 @@ fasta_sequence_lengths = []
 fasta_filename = sys.argv[1]
 
 # Opening the file:
-fastafile = open(fasta_filename, 'r')
+fastafile = open(fasta_filename, 'r') #'r' open it for reading
 
 # Iterating over all lines in the file:
 for line in fastafile.readlines():
